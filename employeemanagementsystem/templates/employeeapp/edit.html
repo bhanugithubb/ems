@@ -1,0 +1,13 @@
+{% extends 'employeeapp/base.html' %}
+{% block content %}
+<h1>Employee details</h1>
+    <form>
+    <table>
+            {{ user_form.as_table }}
+        <button type="submit" >Employee</button>
+
+    </table>
+    </form>
+
+{% endblock %}
+

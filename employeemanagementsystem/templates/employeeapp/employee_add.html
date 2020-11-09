@@ -1,0 +1,14 @@
+{% extends 'employeeapp/index.html' %}
+{% block content %}
+<h1>Employee details</h1>
+    <form method="POST">
+    {% csrf_token %}
+    <table>
+            {{ user_form.as_table }}
+        <button type="submit" >add employee</button>
+
+    </table>
+    </form>
+
+{% endblock %}
+
